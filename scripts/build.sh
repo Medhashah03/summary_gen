@@ -1,7 +1,10 @@
 #!/bin/bash
 
+# Ensure the script has executable permissions
+chmod +x ./scripts/build.sh
 
+# Install Python dependencies
+pip install -r requirements.txt
 
-# Download the model checkpoint for transformers
-transformers-cli login
-transformers-cli repo login
+# Execute the build script
+./scripts/build.sh
