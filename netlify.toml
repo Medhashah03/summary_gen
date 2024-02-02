@@ -1,0 +1,6 @@
+[build]
+  command = "pip install -r requirements.txt && ./scripts/build.sh"
+  functions = "lambda/"
+
+[dev]
+  command = "uvicorn app_fastapi:app --reload"
